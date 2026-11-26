@@ -6,7 +6,7 @@ import os
 import pydgraph
 
 # Carpeta donde están los archivos CSV
-CSV_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "csv")
+CSV_DIR = "csv"
 
 
 def set_schema(client):
@@ -175,8 +175,9 @@ def cargar_instalaciones(client):
                 "coordinates": [float(row["lon"]), float(row["lat"])],
             },
         })
+    uids = guardar_nodos(client, nodos)
     print(f"Instalaciones cargadas: {len(nodos)}")
-    return guardar_nodos(client, nodos)
+    return uids
 
 
 def cargar_clientes(client):
@@ -192,8 +193,9 @@ def cargar_clientes(client):
             "es_premium": texto_a_bool(row["es_premium"]),
             "fecha_alta": row["fecha_alta"],
         })
+    uids = guardar_nodos(client, nodos)
     print(f"Clientes cargados: {len(nodos)}")
-    return guardar_nodos(client, nodos)
+    return uids
 
 
 def cargar_empleados(client):
@@ -208,8 +210,9 @@ def cargar_empleados(client):
             "certificado_mp": texto_a_bool(row["certificado_mp"]),
             "antiguedad_anios": int(row["antiguedad_anios"]),
         })
+    uids = guardar_nodos(client, nodos)
     print(f"Empleados cargados: {len(nodos)}")
-    return guardar_nodos(client, nodos)
+    return uids
 
 
 def cargar_vehiculos(client):
@@ -224,8 +227,9 @@ def cargar_vehiculos(client):
             "es_electrico": texto_a_bool(row["es_electrico"]),
             "estado": row["estado"],
         })
+    uids = guardar_nodos(client, nodos)
     print(f"Vehículos cargados: {len(nodos)}")
-    return guardar_nodos(client, nodos)
+    return uids
 
 
 def cargar_envios(client):
@@ -242,8 +246,9 @@ def cargar_envios(client):
             "estado": row["estado"],
             "fecha_compromiso": row["fecha_compromiso"],
         })
+    uids = guardar_nodos(client, nodos)
     print(f"Envíos cargados: {len(nodos)}")
-    return guardar_nodos(client, nodos)
+    return uids
 
 
 def cargar_incidencias(client):
@@ -259,8 +264,9 @@ def cargar_incidencias(client):
             "resuelta": texto_a_bool(row["resuelta"]),
             "descripcion": row["descripcion"],
         })
+    uids = guardar_nodos(client, nodos)
     print(f"Incidencias cargadas: {len(nodos)}")
-    return guardar_nodos(client, nodos)
+    return uids
 
 
 def cargar_relacion(client, archivo, predicado, uids, facets):
@@ -327,7 +333,6 @@ def cargar_datos(client):
 def imprimir(res):
     datos = json.loads(res.json)
     print(json.dumps(datos, indent=2, ensure_ascii=False))
-    return datos
 
 
 def buscar_clientes_por_nombre(client, texto):
@@ -380,7 +385,7 @@ def rastrear_envio(client, guia):
                 codigo
                 ciudad
             }
-            vehiculos: transportado_en @facets(tramo) {
+            vehiculos: transportado_en @facets(orderasc: fecha, tramo) {
                 matricula
                 tipo
             }
