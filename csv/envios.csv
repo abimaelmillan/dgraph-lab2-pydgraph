@@ -1,0 +1,10 @@
+numero_guia,servicio,peso_kg,valor_declarado_usd,es_peligroso,estado,fecha_compromiso
+1234567890,Express,3.2,450.0,false,entregado,2026-11-04T18:00:00
+2345678901,Express,18.5,3200.0,false,detenido,2026-11-09T18:00:00
+3456789012,Economy,6.0,180.0,false,detenido,2026-11-12T18:00:00
+4567890123,Express,9.8,1200.0,false,detenido,2026-11-08T18:00:00
+5678901234,Express,22.0,2800.0,false,entregado,2026-10-30T18:00:00
+6789012345,Express,4.5,950.0,true,entregado,2026-10-31T18:00:00
+7890123456,Express,12.0,1600.0,true,detenido,2026-11-09T18:00:00
+8901234567,Economy,7.5,320.0,false,entregado,2026-11-06T18:00:00
+9012345678,Express,2.1,640.0,false,entregado,2026-11-03T18:00:00

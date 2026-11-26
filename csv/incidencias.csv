@@ -1,0 +1,5 @@
+id_incidencia,tipo,severidad,fecha,resuelta,descripcion
+INC-2026-0001,retraso,5,2026-11-06T01:30:00Z,false,Tormenta invernal cierra el hub de Cincinnati
+INC-2026-0002,daño,3,2026-11-03T07:50:00Z,false,Piezas de cerámica rotas por un golpe en el camión
+INC-2026-0003,retencion_aduanal,2,2026-10-28T17:00:00Z,true,Falta el certificado de origen
+INC-2026-0004,retraso,2,2026-10-29T03:00:00Z,true,Vuelo a Cincinnati 4 horas tarde por mantenimiento

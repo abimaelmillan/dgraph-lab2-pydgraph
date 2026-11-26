@@ -1,0 +1,9 @@
+codigo,tipo,ciudad,pais,capacidad_diaria,lon,lat
+GDL,centro,Guadalajara,México,18000,-103.3496,20.6597
+MEX,gateway,Ciudad de México,México,60000,-99.0721,19.4363
+MIA,gateway,Miami,Estados Unidos,90000,-80.287,25.7959
+CVG,hub,Cincinnati,Estados Unidos,250000,-84.6678,39.0488
+JFK,gateway,Nueva York,Estados Unidos,120000,-73.7781,40.6413
+MAD,gateway,Madrid,España,70000,-3.5676,40.4983
+LEJ,hub,Leipzig,Alemania,300000,12.2364,51.4239
+BER,centro,Berlín,Alemania,25000,13.405,52.52

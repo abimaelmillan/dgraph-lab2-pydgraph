@@ -1,0 +1,10 @@
+id_cliente,nombre,tipo_cliente,pais,es_premium,fecha_alta
+CLI-001,Tequilera Los Altos S.A. de C.V.,empresa,México,true,2019-03-14
+CLI-002,Artesanías Tlaquepaque,empresa,México,false,2021-08-02
+CLI-003,Autopartes del Bajío S.A. de C.V.,empresa,México,true,2018-11-20
+CLI-004,María Fernanda López,particular,México,false,2023-05-20
+CLI-005,Klaus Becker,particular,Alemania,false,2020-01-10
+CLI-006,Autoteile Sachsen GmbH,empresa,Alemania,true,2018-06-25
+CLI-007,Hannah Schmidt,particular,Alemania,false,2024-02-11
+CLI-008,Elektronik Berlin GmbH,empresa,Alemania,true,2019-09-30
+CLI-009,Laboratorios Occidente S.A. de C.V.,empresa,México,true,2022-04-04

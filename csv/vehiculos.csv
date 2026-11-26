@@ -1,0 +1,8 @@
+matricula,tipo,capacidad_kg,es_electrico,estado
+JAL-482-K,van,1200.0,false,activo
+JAL-907-T,camión,14000.0,false,activo
+N767DX,avión,52000.0,false,activo
+N777DX,avión,102000.0,false,en_tierra
+L-DX-4410,camión,18000.0,false,activo
+B-DX-2207,van,1000.0,true,activo
+JAL-215-E,van,900.0,true,activo

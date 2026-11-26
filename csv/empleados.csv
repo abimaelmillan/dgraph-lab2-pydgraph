@@ -1,0 +1,10 @@
+id_empleado,nombre,rol,certificado_mp,antiguedad_anios
+EMP-101,Luis Hernández,mensajero,false,4
+EMP-102,Ana Ramírez,agente aduanal,true,6
+EMP-103,Jorge Castillo,piloto,true,12
+EMP-104,Emily Carter,piloto,true,9
+EMP-105,Daniel Weber,operador,false,3
+EMP-106,Lukas Fischer,mensajero,true,5
+EMP-107,Sarah Johnson,operador,true,7
+EMP-108,Miguel Ángel Rojas,mensajero,true,5
+EMP-109,Ricardo Méndez,operador,true,8
